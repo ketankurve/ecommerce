@@ -1,0 +1,133 @@
+/* General container */
+.cart-container {
+  max-width: 960px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: #fdfdfd;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+/* Heading */
+.cart-container h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.4em;
+  color: #1a1a1a;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+/* Individual cart item */
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 20px 0;
+  transition: background-color 0.3s;
+}
+
+.cart-item:hover {
+  background-color: #fafafa;
+}
+
+/* Product image */
+.cart-item img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+/* Product name & price */
+.cart-item-details {
+  flex-grow: 1;
+  margin-left: 25px;
+}
+
+.cart-item-details p {
+  margin: 4px 0;
+  font-size: 1.05rem;
+  color: #333;
+  line-height: 1.4;
+}
+
+/* Quantity input */
+.cart-item-quantity input {
+  width: 70px;
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.3s;
+  outline: none;
+}
+
+.cart-item-quantity input:focus {
+  border-color: #007bff;
+}
+
+/* Remove button */
+.remove-btn {
+  background-color: #ff4d4d;
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.remove-btn:hover {
+  background-color: #cc0000;
+  transform: scale(1.05);
+}
+
+/* Total section */
+.cart-total {
+  text-align: right;
+  margin-top: 30px;
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+/* Empty cart message */
+.empty-cart {
+  text-align: center;
+  font-size: 1.2em;
+  color: #888;
+  padding: 60px 0;
+}
+
+/* Responsive behavior */
+@media (max-width: 640px) {
+  .cart-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cart-item-details {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+
+  .cart-item-quantity {
+    margin-top: 12px;
+  }
+
+  .cart-total {
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .remove-btn {
+    margin-top: 10px;
+  }
+}

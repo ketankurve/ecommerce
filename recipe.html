@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Recipe Details</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f0;
+    }
+
+    .recipe-detail {
+      max-width: 800px;
+      margin: 60px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      text-align: center;
+    }
+    .recipe-detail img {
+      width: 30%;
+      max-width: 500px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+    .recipe-detail h1 {
+      font-size: 32px;
+      margin-bottom: 30px;
+      margin-top: 20px;
+    }
+    .recipe-detail p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <div class="recipe-detail" id="recipeContainer">
+    <!-- Content inserted by JS -->
+  </div>
+
+  <script>
+    const recipes = {
+      "green-smoothie": {
+        title: "Green Detox Smoothie",
+        img: "images/recipe1.jpg",
+        description: "A refreshing mix of kale, banana, and coconut water.",
+        details: "Blend together 1 banana, 1 cup kale, 1/2 cup coconut water, 1 tsp chia seeds. Enjoy chilled!"
+      },
+      "veggie-bowl": {
+        title: "Rainbow Veggie Bowl",
+        img: "images/recipe2.jpg",
+        description: "Colorful veggies tossed with organic olive oil.",
+        details: "Combine chopped bell peppers, shredded carrots, cherry tomatoes, spinach, and quinoa. Dress with olive oil, lemon juice, and herbs."
+      }
+    };
+
+    const params = new URLSearchParams(window.location.search);
+    const recipeKey = params.get('recipe');
+    const container = document.getElementById('recipeContainer');
+
+    if (recipes[recipeKey]) {
+      const recipe = recipes[recipeKey];
+      container.innerHTML = `
+        <h1>${recipe.title}</h1>
+        <img src="${recipe.img}" alt="${recipe.title}">
+        
+        <p><strong>${recipe.description}</strong></p>
+        <p>${recipe.details}</p>
+      `;
+    } else {
+      container.innerHTML = `<p>Recipe not found.</p>`;
+    }
+  </script>
+</body>
+</html>

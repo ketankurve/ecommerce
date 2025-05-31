@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Local - Organic Store</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo"><img src="images/logo.webp" alt="Local Organic Store" /></div>
+        <nav class="nav-links">
+        <a href="#categories">Categories</a>
+        <a href="#about">About us</a>
+        <a href="#stores">Our stores</a>
+        <a href="#recipes">Recipes</a>
+        <a href="#blog">Blog</a>
+        <a href="#faq">FAQ</a>
+        </nav>
+        <div class="user-actions">
+        <button class="account-btn">Account</button>
+        <button class="cart-btn">$0.00 (0)
+        </button>
+      </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+        <p class="tagline">OUR PROMISE</p>
+        <h1>
+            Fresh.<br />
+            Organic.<br />
+            Delivered.
+        </h1>
+        <button class="cta-btn">GET IT</button>
+        </div>
+    </section>
+
+    <section id="categories" class="categories">
+        <div class="category-item" data-category="Bread & Bakery">
+            <img src="images/bread.png" alt="Bread & Bakery" />
+            <p>Bread & Bakery</p>
+        </div>
+        <div class="category-item" data-category="Flour & Baking">
+            <img src="images/flour.png" alt="Flour & Baking" />
+            <p>Flour & Baking</p>
+        </div>
+        <div class="category-item" data-category="Fruits & Vegetables">
+            <img src="images/fruits.png" alt="Fruits & Vegetables" />
+            <p>Fruits & Vegetables</p>
+        </div>
+        <div class="category-item" data-category="Fresh Meals & Pizzas">
+            <img src="images/pizza.png" alt="Fresh Meals & Pizzas" />
+            <p>Fresh Meals & Pizzas</p>
+        </div>
+        <div class="category-item" data-category="Beverages">
+            <img src="images/beverages.png" alt="Beverages" />
+            <p>Beverages</p>
+        </div>
+    </section>
+
+    <section id="category-products" class="category-products" style="display: none;">
+        <h2 id="category-title">Category Products</h2>
+        <div class="product-grid" id="category-product-list"></div>
+    </section>
+
+    <!-- About Us -->
+    <section id="about" class="about-us" style="padding: 60px 40px; background-color: #fff;">
+        <h2 style="font-size: 28px; margin-bottom: 20px;">About Us</h2>
+        <p style="max-width: 800px; line-height: 1.6; color: #555;">
+        At OrganicFresh, we're passionate about providing 100% organic, farm-fresh products directly to your doorstep.
+        Our mission is to support sustainable farming and offer nutritious, chemical-free food for a healthier tomorrow.
+        </p>
+    </section>
+
+    <!-- Our Stores -->
+    <section id="stores" class="our-stores" style="padding: 60px 40px; background-color: #f5f5f0;">
+        <h2 style="font-size: 28px; margin-bottom: 20px;">Our Stores</h2>
+        <p style="max-width: 800px; color: #555;">
+        Visit our physical outlets in Nagpur, Pune, and Mumbai. We're expanding soon to more cities!
+        </p>
+        <ul style="margin-top: 20px; color: #333;">
+        <li>📍 Sitabuldi, Nagpur</li>
+        <li>📍 Kothrud, Pune</li>
+        <li>📍 Andheri West, Mumbai</li>
+        </ul>
+    </section>
+
+    <!-- Recipes -->
+    <section id="recipes" class="recipes">
+        <h2>Healthy Recipes</h2>
+        <div class="product-grid">
+            <a href="recipe.html?recipe=green-smoothie" class="product-card">
+                <img src="images/recipe1.jpg" alt="Smoothie">
+                <h3>Green Detox Smoothie</h3>
+                <p class="desc">A refreshing mix of kale, banana, and coconut water.</p>
+            </a>
+            <a href="recipe.html?recipe=veggie-bowl" class="product-card">
+                <img src="images/recipe2.jpg" alt="Salad">
+                <h3>Rainbow Veggie Bowl</h3>
+                <p class="desc">Colorful veggies tossed with organic olive oil.</p>
+            </a>
+        </div>
+    </section>
+  
+
+    <!-- Blog -->
+    <section id="blog" class="blog" style="padding: 60px 40px; background-color: #f5f5f0;">
+        <h2 style="font-size: 28px; margin-bottom: 20px;">From Our Blog</h2>
+        <div class="product-grid">
+        <div class="product-card">
+            <h3>5 Myths About Organic Food</h3>
+            <p class="desc">We bust common myths with scientific facts and farmer insights.</p>
+        </div>
+        <div class="product-card">
+            <h3>Why Go Local?</h3>
+            <p class="desc">Benefits of supporting local organic farmers and small businesses.</p>
+        </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="faq" style="padding: 60px 40px; background-color: #fff;">
+        <h2 style="font-size: 28px; margin-bottom: 20px;">Frequently Asked Questions</h2>
+        <div>
+        <h4 style="margin-top: 15px;">Is all your produce certified organic?</h4>
+        <p style="color: #555;">Yes, all our products are certified by relevant organic authorities in India.</p>
+
+        <h4 style="margin-top: 15px;">Do you deliver pan India?</h4>
+        <p style="color: #555;">Currently, we deliver to major cities, but we’re expanding quickly!</p>
+
+        <h4 style="margin-top: 15px;">How do I store organic produce?</h4>
+        <p style="color: #555;">We provide storage instructions with each order to ensure freshness.</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+
+
+</body>
+</html>
