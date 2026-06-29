@@ -1,21 +1,46 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart - JPTravels</title>
-    <link rel="stylesheet" href="cart.css">
-</head>
-<body>
-    <header>
-        <h1>Your Cart</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Cart - Local Organic Store</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="cart.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">
+        <img
+          src="images/logo.webp"
+          alt="Local Organic Store"
+          onerror="this.src = ''"
+          alt="Logo"
+        />
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">← Back to Shop</a>
+      </nav>
     </header>
-    <main>
+
+    <main class="cart-wrapper">
+      <div class="cart-container">
+        <h2>Your Shopping Cart</h2>
+
         <div id="cart-items" class="cart-items"></div>
-        <div class="total-container">
-            <strong>Total: ₹<span id="cart-total">0.00</span></strong>
+
+        <div class="cart-footer">
+          <div class="total-container">
+            <strong>Total: <span id="cart-total">$0.00</span></strong>
+          </div>
+          <button id="checkout-btn" class="btn checkout-btn">
+            Proceed to Checkout
+          </button>
         </div>
+      </div>
     </main>
+
+    <div id="toast-container" class="toast-container"></div>
+
     <script src="cart.js"></script>
-</body>
+  </body>
 </html>
