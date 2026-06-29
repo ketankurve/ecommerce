@@ -37,7 +37,6 @@ A premium, fully responsive e-commerce frontend application built with modern we
 ```
 
 2. **Navigate to the project folder:**
-```bash
 cd ecommerce
 
 ```
@@ -62,6 +61,4 @@ Contributions are welcome! If you have suggestions for new features, feel free t
 
 *Built by [Ketan Kurve*](https://github.com/ketankurve)
 
-Everything is now ready for your GitHub repository! Let me know if you need help with your LinkedIn update or the next steps in your job search!
-
-```
+Everything is now ready for your GitHub repository!
